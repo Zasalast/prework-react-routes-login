@@ -10,7 +10,7 @@ import {
   Outlet,
 } from "react-router-dom";
  
-function Headers() {
+function Headers({children}) {
  
   return (
     <div> 
@@ -23,11 +23,10 @@ function Headers() {
       > 
         <Link to="/invoices">Invoices</Link> |{" "}
         <Link to="/expenses">Expenses</Link>| 
-        <Link to="/about">about</Link>|{" "}
-        <Link to="/login">login</Link>| 
+        <Link to="/about">about</Link>|{" "}       
         <Link to="/team">team</Link>|{" "}
         <Link to="/teams">teams</Link>|{" "}
-        <Link to="/home">home</Link>    
+        <Link to="/home">home</Link>  |{" "} <Link to="/login">login</Link>|   {children} 
          
       </nav>
    

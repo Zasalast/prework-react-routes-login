@@ -36,16 +36,16 @@ function AuthStatus() {
     let auth = useAuth();
     let navigate = useNavigate();
     if (!auth.user) {
-        return <p>You are not logged in.</p>;
+        return <> </>;
     }
-    return (<p>
-      Welcome {auth.user}!{" "}
+    return (<>
+       {auth.user}{""}
       <button onClick={() => {
             auth.signout(() => navigate("/home"));
         }}>
-        Sign out
+        Sign out  
       </button>
-    </p>);
+    </>);
 }
 function RequireAuth({ children }) {
     let auth = useAuth();

@@ -20,7 +20,7 @@ function RoutesApp() {
       {/*routes public*/}
       <Routes>
         <Route path="/"  element={<Layout />}>
-        <Route index element={<Home />} />
+        <Route index path="home" element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="login" element={<LoginPage />} />
           <Route path="about" element={<About />} />          
