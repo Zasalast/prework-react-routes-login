@@ -24,8 +24,8 @@ function RoutesApp() {
           <Route path="about" element={<About />} />
           <Route path="login" element={<LoginPage />} />
           <Route path="about" element={<About />} />          
-          <Route path="teams" element={<Team />} />
-          <Route path="expenses" element={<Expenses />} />
+         
+         
           <Route path="invoices" element={<Invoices />}>
             <Route
               index
@@ -42,9 +42,9 @@ function RoutesApp() {
       {/*routes private*/}
       <Routes>
         <Route element={<Layout />}>
-          {/*  <RequireAuth> */}
-          <Route path="/team" element={<Team />} />
-          {/*  </RequireAuth> */} 
+        <Route path="expenses" element={<RequireAuth><Expenses /></RequireAuth>} />
+          <Route path="/team" element={ <RequireAuth><Team /> </RequireAuth> } />
+          
         </Route>  
       </Routes>
     

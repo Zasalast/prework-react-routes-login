@@ -5,10 +5,12 @@ import reportWebVitals from "./reportWebVitals";
 
 import { BrowserRouter } from "react-router-dom"; 
 import RoutesApp from "./routes/routes"; 
+import Headers from "./layout/Header";
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>  
+  {/*   <Headers/> */}
     <RoutesApp/>
     </BrowserRouter>{" "}
   </React.StrictMode>,

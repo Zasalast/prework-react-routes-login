@@ -9,7 +9,7 @@ import {
   Navigate,
   Outlet,
 } from "react-router-dom";
- 
+
 function Headers({children}) {
  
   return (
@@ -25,11 +25,11 @@ function Headers({children}) {
         <Link to="/expenses">Expenses</Link>| 
         <Link to="/about">about</Link>|{" "}       
         <Link to="/team">team</Link>|{" "}
-        <Link to="/teams">teams</Link>|{" "}
-        <Link to="/home">home</Link>  |{" "} <Link to="/login">login</Link>|   {children} 
+       
+        <Link to="/home">home</Link>  |{" "}  <Link to="/login">login</Link>|   {children} 
          
       </nav>
-   
+    
     </div>
   );
 }

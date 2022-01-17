@@ -36,7 +36,7 @@ function AuthStatus() {
     let auth = useAuth();
     let navigate = useNavigate();
     if (!auth.user) {
-        return <> </>;
+        return <> ''</>;
     }
     return (<>
        {auth.user}{""}
