@@ -33,25 +33,9 @@ function Headers({ children }) {
           <Menu.Item key="2">
             {" "}
             <Link to="/expenses">Expenses</Link>|{" "}
-          </Menu.Item>
-          <Menu.Item key="3">
-            {" "}
-            <Link to="/about">about</Link>|{" "}
-          </Menu.Item>
-          <Menu.Item key="4">
-            {" "}
-            <Link to="/team">team</Link>|{" "}
-          </Menu.Item>
-          <Menu.Item key="5">
-            {" "}
-            <Link to="/home">home</Link>
           </Menu.Item>{" "}
-          |{" "}
-          <Menu.Item key="6">
-            {" "}
-            <Link to="/login">login</Link>|
-          </Menu.Item>{" "}
-          {children}
+          <Link to="/about">about</Link>| <Link to="/team">team</Link>|{" "}
+          <Link to="/home">home</Link>|<Link to="/login">login</Link>|{children}
           {/*   </nav> */}
         </Menu>
       </Header>
